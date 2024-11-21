@@ -1,5 +1,5 @@
 # Hom3Town
-Your WEB3 gamer forever home
+Your WEB3 forever home
 
 ## Hom3Town Wiki
 Visit the wiki to view progress, updates, thoughts, etc. Check back often, as most write-ups will exist there for further explanations of future commits. Thanks! 
