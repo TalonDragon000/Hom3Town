@@ -1,6 +1,28 @@
 # Hom3Town
 Your WEB3 forever home
 
+## What is Hom3Town? 
+
+**Hom3Town** is a "starter world" for anyone wanting to get into the WEB3 gaming space (or anything really. It can expand A LOT). 
+The onboarding process is gamified in a way that *feels* like you are starting a normal browser RPG. 
+The catch is that all your basic needs for WEB3 integration automatically gets setup for you in the backend. It doesn't require you to know anything about WEB3 or how it works (UNTIL you need it). 
+
+__What users initially see:__
+- character creation
+- home creation
+- visit the neighborhood (friends homes)
+- visit the town (main trading and RPG hub)
+- earn coins for exploration, completing quests, etc.
+
+__What users DON'T initially see:__
+- logging in the first time auto-creates an account abstracted smart wallet for the user (hopefully with account retrieval methods probably from multi-sig type permissions). no KYC required.
+- character is a NFT, gas sponsored free mint with limited choices as a "starter NFT." This is the "low hanging fruit" that has no mint cap to allow users the ability to enter the ecosystem and be part of the community.
+the dashboard looks like a "home" and acts as the central hub for all of the player's NFT and token storage.
+- the home is initially all off-chain and furniture customizable. eventually it can "read" the user's wallet to allow NFT unlocks to display in their home
+- the town is essentially a marketplace that looks and feels like an RPG town. each building is a separate "shop" that holds different items. all shops have the option to sell both off-chain $COIN and on-chain $TOKEN (or something, idk yet lol). Initially, the town will have one shop for furniture, clothing, and a bank. anyone will eventually be allowed to open their own shops and sell (or trade) whatever they want in it.
+- the town will also have a bulletin board for quests, notices, etc. Quests will probably initially allow users to earn and use off-chain $COIN initially. If the player decides they want to open their own shop, they will be able to accept on-chain $TOKEN to build their "premium" piggy bank.
+- More "Towns" can be created outside of Hom3Town for players to explore. This would come in the form of other creator's "worlds."
+
 ## Hom3Town Wiki
 Visit the wiki to view progress, updates, thoughts, etc. Check back often, as most write-ups will exist there for further explanations of future commits. Thanks! 
 https://github.com/TalonDragon000/Hom3Town/wiki
