@@ -37,6 +37,9 @@ the dashboard looks like a "home" and acts as the central hub for all of the pla
 
 **Wk 5+:** Home, neighborhood, town, coins, quests, etc.
 
+## Tools
+- Starter github configuration of client and server using phaser and vite ([MOW Repo by Dan Nolan](https://github.com/Dan-Nolan/mow-episodes/tree/main))
+
 ## Hom3Town Wiki
 Visit the wiki to view progress, updates, thoughts, etc. Check back often, as most write-ups will exist there for further explanations of future commits. Thanks! 
 https://github.com/TalonDragon000/Hom3Town/wiki
