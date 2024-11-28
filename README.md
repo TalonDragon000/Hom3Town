@@ -26,6 +26,17 @@ the dashboard looks like a "home" and acts as the central hub for all of the pla
 - the town will also have a bulletin board for quests, notices, etc. Quests will probably initially allow users to earn and use off-chain $COIN initially. If the player decides they want to open their own shop, they will be able to accept on-chain $TOKEN to build their "premium" piggy bank.
 - More "Towns" can be created outside of Hom3Town for players to explore. This would come in the form of other creator's "worlds."
 
+## RoadMap
+~~**Wk 1:** Character Sprite Sheet~~ DONE!
+
+**Wk 2:** Character Creator and NFT Mint
+
+**Wk 3:** Inventory Display and Dashboard
+
+**Wk 4:** Read Inventory from other worlds to display in user Dashboard
+
+**Wk 5+:** Home, neighborhood, town, coins, quests, etc.
+
 ## Hom3Town Wiki
 Visit the wiki to view progress, updates, thoughts, etc. Check back often, as most write-ups will exist there for further explanations of future commits. Thanks! 
 https://github.com/TalonDragon000/Hom3Town/wiki
