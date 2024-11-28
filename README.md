@@ -1,5 +1,7 @@
 # Hom3Town
 Your WEB3 forever home
+![cozy cottage home](https://github.com/user-attachments/assets/eab91122-b8dd-4eb0-a6a3-8a830ba2e474)
+
 
 ## What is Hom3Town? 
 
