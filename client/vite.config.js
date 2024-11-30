@@ -9,5 +9,5 @@ export default defineConfig({
     server: {
         port: 3001, // Change this if you want a different port for the Vite dev server
         // https: true // Enable HTTPS for the Vite dev server
-    },
+    }
 });
