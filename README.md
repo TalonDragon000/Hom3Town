@@ -38,7 +38,15 @@ the dashboard looks like a "home" and acts as the central hub for all of the pla
 **Wk 5+:** Home, neighborhood, town, coins, quests, etc.
 
 ## Tools
-- Starter github configuration of client and server using phaser and vite ([MOW Repo by Dan Nolan](https://github.com/Dan-Nolan/mow-episodes/tree/main))
+- Used the MOW repo as a guide for setting up my client and server files ([MOW Repo by Dan Nolan](https://github.com/Dan-Nolan/mow-episodes/tree/main))
+- CLI: [Cursor](https://www.cursor.com/) - with GPT-4O-mini AI chat feature
+- Front-end: HTML5, CSS, Javascript - [Node.js](https://nodejs.org/en/), [Vite](https://vite.dev/), [Vue](https://vuejs.org/)
+- Back-end: [express](https://expressjs.com/), [socket.io](https://socket.io/)
+- Deployment: [Vercel](https://vercel.com/)
+
+### Artist Tools: 
+- Pixel Artwork: [Pixel Studio on iPad](https://play.google.com/store/apps/details?id=com.PixelStudio&hl=en_US)
+- Tilemaps: [Tiled](https://www.mapeditor.org/)
 
 ## Hom3Town Wiki
 Visit the wiki to view progress, updates, thoughts, etc. Check back often, as most write-ups will exist there for further explanations of future commits. Thanks! 
