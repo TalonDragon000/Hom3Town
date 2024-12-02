@@ -1,5 +1,4 @@
 /* client/src/styles.css */
-
 /* CSS Variables for easy theming */
 :root {
     --primary-color: #4ecca6;
@@ -8,15 +7,43 @@
     --text-color: #333; 
     --background-color: #f4f4f4; /* Light background */
     --font-family: 'Arial', sans-serif;
+    --cozy-cottage: url("https://github.com/TalonDragon000/Hom3Town/blob/main/client/assets/cozy-cottage.jpg?raw=true");
+    --starter-sprite: url("https://github.com/TalonDragon000/Hom3Town/blob/main/client/assets/Starter%20Avatar%20Set.png?raw=true");
 }
 
-.navbar {
+.navbar-white {
+    justify-content: center;
     background-color: var(--background-color);
+    margin: auto;
+    padding: 10px;
+    max-width: 1100px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-item-left {
+    margin-right: auto; /* Pushes the item to the left */
+}
+
+.nav-item-right {
+    margin-left: auto; /* Pushes the item to the right */
+}
+
+.navbar-bg {
+    background: var(--cozy-cottage);
+    background-size: fill;
     justify-content: center;
     margin: auto;
-    padding-top: 10px;
-    padding-inline: 10px;
-    max-width: 1100px;
+    padding: 10px;
+    max-width: 1140px;
 }
 
 navbar a {
@@ -31,12 +58,17 @@ navbar a {
     padding: 20px;
 }
 
+/* Container as space box */
+.container-space {
+    max-width: 1200px;
+    height: 255px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--background-color);
 }
 
 li {
@@ -46,7 +78,7 @@ li {
 
 /* Header Styles */
 header {
-    background-image: url("https://github.com/TalonDragon000/Hom3Town/blob/main/client/cozy-cottage.jpg?raw=true");
+    background-image: var(--cozy-cottage);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -77,11 +109,12 @@ header p {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
-    box-shadow: 0px 0px 3px 3px #ffffffee;
+    border-color: #2885c4;
 }
 
 .btn:hover {
     background: var(--secondary-color);
+    border-color: #d98f4a;
 }
 
 /* Features Section */
@@ -117,6 +150,187 @@ header p {
     border-radius: 5px;
 }
 
+/* Character Container */
+.character-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto; /* Center the container */
+    max-width: 1200px; /* Set a max width for the container */
+    min-height: 200px;
+    padding-inline: 20px;
+}
+
+/* Main Character Column */
+.preview-container {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin-right: 1rem;
+    display: block;
+}
+
+.preview-character {
+    position: relative;
+    width: 64px;
+    height: 128px;
+    margin: auto;
+    overflow: hidden;
+}
+.preview-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 128px;
+}
+
+/* Add specific z-index values for each layer */
+#preview-body {
+    z-index: 1;
+}
+
+#preview-eyes {
+    z-index: 2;
+}
+
+#preview-brows {
+    z-index: 3;
+}
+
+#preview-mouth {
+    z-index: 4;
+}
+
+#preview-underwear {
+    z-index: 5;
+}
+
+#preview-shoes {
+    z-index: 6;
+}   
+
+#preview-bottom {
+    z-index: 7;
+}
+
+#preview-top {
+    z-index: 8;
+}
+
+#preview-facialHair {
+    z-index: 9;
+}
+
+#preview-facialHair2 {
+    z-index: 10;
+}
+
+#preview-hair {
+    z-index: 11;
+}
+
+/* Character Selector Column */
+.create-container {
+    flex-grow: 1;
+    display: relative;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    padding-left: 1rem;
+    position: inline;
+}
+
+/* Interactive Elements */
+.asset-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content:space-between;
+
+}
+
+.asset-btn {
+    width: 64px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Ensure the sprite doesn't overflow */
+}
+
+.asset-btn:hover {
+    border-color: var(--third-color);
+    box-shadow: 0 0 8px rgba(74, 158, 255, 0.5);
+}
+
+.frame-id-display {
+    position: absolute;
+    bottom: 0;  /* Move below the element instead of overlaying */
+    left: 0;
+    right: 0;
+    background: var(--text-color);
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    text-align: center;
+}
+
+.confirm-selection-container {
+    margin-top: 0.2rem;  /* Space above the button */
+    display: flex;      /* Use flexbox for alignment */
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;  /* Align items to the left */
+    width: 100%;  /* Ensure it takes full width of the parent */
+}
+.confirm-btn {
+    width: 100%;  /* Full width */
+    max-width: 200px;  /* Optional: Set a max width for the button */
+    padding: 0.8rem;
+    border-color: var(--text-color);
+    border-radius: 4px;
+    background-color: #fff;  /* Use accent color */
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        background-color: darken(var(--accent-color));  /* Darken on hover */
+        box-shadow: 0 0 8px rgba(74, 158, 255, 0.5);  /* Hover effect */
+    }
+}
+
+.error-message {
+    color: red;  /* Set text color to red */
+    margin-top: 0.5rem;  /* Space above the error message */
+    font-size: 0.9rem;  /* Adjust font size */
+    display: none;  /* Initially hidden */
+    background: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease;  /* Apply shake animation */
+}
 
 /* Global Styles */
 body {
@@ -125,6 +339,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    position:relative;
 }
 
 /* Footer Styles */
@@ -133,4 +348,53 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    bottom: 0;
+}
+
+/* Tab styles */
+.asset-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--background-color);
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    background: var(--background-color);
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.tab:hover {
+    background: var(--third-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tab.active {
+    background: var(--third-color);
+    color: white;
+    border-bottom: 2px solid var(--third-color);
+}
+
+/* Update clear and confirm buttons to match nav/hero buttons */
+.action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--third-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.action-btn:hover {
+    background: var(--secondary-color);
 }
