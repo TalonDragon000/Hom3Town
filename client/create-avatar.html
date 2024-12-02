@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hom3Town - Online Game</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/tailwind.css">
+    <script src="src/script.js" defer></script> <!-- Adjusted path and added defer -->
+</head>
+<body>
+    <div class="navbar-bg">
+        <ul>
+            <li><a href="index.html" class="logo"><img src="https://github.com/TalonDragon000/Hom3Town/blob/main/client/assets/Home-Icon.png?raw=true" width="50px"></a></li>
+            <li style="float:right;"><a href="#login" class="btn">Login</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="character-container">
+            <div class="preview-container">
+                <center><h3>Preview Character</h3></center>
+                <div class="preview-character">
+                    <div id="preview-body" class="preview-layer"></div>
+                    <div id="preview-eyes" class="preview-layer"></div>
+                    <div id="preview-brows" class="preview-layer"></div>
+                    <div id="preview-mouth" class="preview-layer"></div>
+                    <div id="preview-underwear" class="preview-layer"></div>
+                    <div id="preview-shoes" class="preview-layer"></div>
+                    <div id="preview-bottom" class="preview-layer"></div>
+                    <div id="preview-top" class="preview-layer"></div>
+                    <div id="preview-facialHair" class="preview-layer"></div>
+                    <div id="preview-facialHair2" class="preview-layer"></div>
+                    <div id="preview-hair" class="preview-layer"></div>
+                </div>
+                <center>
+                <button class="action-btn" id="clear-all-btn">CLEAR</button>
+                <button class="action-btn" id="confirm-btn">CONFIRM</button>
+                </center>
+            </div>
+        <div class="create-container">
+            <h3>Create Character</h3>
+            <p><div class="asset-tabs">
+                <button class="tab active" data-category="body">Body</button>
+                <button class="tab" data-category="eyes">Eyes</button>
+                <button class="tab" data-category="brows">Brows</button>
+                <button class="tab" data-category="mouth">Mouth</button>
+                <button class="tab" data-category="underwear">Underwear</button>
+                <button class="tab" data-category="shoes">Shoes</button>
+                <button class="tab" data-category="bottom">Bottoms</button>
+                <button class="tab" data-category="top">Tops</button>
+                <button class="tab" data-category="facialHair">Facial Hair</button>
+                <button class="tab" data-category="facialHair2">Facial Hair 2</button>
+                <button class="tab" data-category="hair">Hair</button>
+            </div></p>
+                <div class="asset-container"></div>
+                <div id="selected-frame-id" class="frame-id-display">
+                    ID: <span id="frame-id-value">1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-space"></div>
+    <footer>
+        <div class="container">
+            <p><a href="https://github.com/TalonDragon000/Hom3Town"><img src="https://github.com/TalonDragon000/Hom3Town/blob/main/client/assets/github-mark-white.png?raw=true" width="25px"></a></p>
+            <p>&copy; 2023 Hom3Town. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
