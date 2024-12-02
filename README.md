@@ -1,7 +1,8 @@
 # Hom3Town
 Your WEB3 forever home
 
-![cozy cottage home](https://github.com/user-attachments/assets/eab91122-b8dd-4eb0-a6a3-8a830ba2e474)
+![image](https://github.com/user-attachments/assets/4f727945-f707-452d-bbad-0b14f89585ac)
+
 
 
 ## What is Hom3Town? 
@@ -29,9 +30,11 @@ the dashboard looks like a "home" and acts as the central hub for all of the pla
 ## RoadMap
 ~~**Wk 1:** Character Sprite Sheet~~ DONE!
 
-**Wk 2:** Character Creator and NFT Mint
+~~**Wk 2:** Character Creator~~ DONE!
 
-**Wk 3:** Inventory Display and Dashboard
+**Wk 3:** 
+- Account abstracted login and NFT mint
+- Inventory Display and Dashboard
 
 **Wk 4:** Read Inventory from other worlds to display in user Dashboard
 
