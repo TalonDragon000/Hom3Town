@@ -1,13 +1,24 @@
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue'; // If using Vue
+import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path';
 
 export default defineConfig({
-    plugins: [vue()], // Include this if using Vue
+    plugins: [vue()],
     build: {
-        outDir: 'dist', // Ensure the output directory is set correctly
+        outDir: 'dist',
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                createAvatar: resolve(__dirname, 'create-avatar/index.html')
+            }
+        }
     },
     server: {
-        port: 3001, // Change this if you want a different port for the Vite dev server
-        // https: true // Enable HTTPS for the Vite dev server
+        port: 3001
+    },
+    resolve: {
+        alias: {
+            '@': resolve(__dirname, 'src'),
+        },
     }
 });
