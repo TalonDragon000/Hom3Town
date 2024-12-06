@@ -47,7 +47,7 @@ the dashboard looks like a "home" and acts as the central hub for all of the pla
   -- [Will be moving to all React, Typescript, and Tailwindcss]
 - Back-end: [express](https://expressjs.com/), [socket.io](https://socket.io/)
 - Deployment: [Vercel](https://vercel.com/)
-- Login/Account: [Alchemy Account Kit(https://accountkit.alchemy.com/react/overview)]
+- Login/Account: [Alchemy Account Kit](https://accountkit.alchemy.com/react/overview)
 
 ### Artist Tools: 
 - Pixel Artwork: [Pixel Studio on iPad](https://play.google.com/store/apps/details?id=com.PixelStudio&hl=en_US)
